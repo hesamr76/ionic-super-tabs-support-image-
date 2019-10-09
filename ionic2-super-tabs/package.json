@@ -1,0 +1,78 @@
+{
+  "_from": "ionic2-super-tabs",
+  "_id": "ionic2-super-tabs@5.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-7cU1SMVU992iYojMrvw2Z9RaAKbZEK/xpvvc2puKSaEjBCInnb/qVqEdh0SxihFduQA7tDW/DhSqT1Cr2sRR6A==",
+  "_location": "/ionic2-super-tabs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ionic2-super-tabs",
+    "name": "ionic2-super-tabs",
+    "escapedName": "ionic2-super-tabs",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ionic2-super-tabs/-/ionic2-super-tabs-5.2.0.tgz",
+  "_shasum": "b9a7d676a403eef471c7253347ad4485cf583b1c",
+  "_spec": "ionic2-super-tabs",
+  "_where": "/home/hesam/Documents/Ania/GameApp/rubika",
+  "author": {
+    "name": "Ibby Hadeed",
+    "email": "ibby@zyra.ca"
+  },
+  "bugs": {
+    "url": "https://github.com/zyra/ionic2-super-tabs/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Swipeable tabs module for Ionic 3 Apps",
+  "devDependencies": {
+    "@angular/common": "5.2.11",
+    "@angular/compiler": "5.2.11",
+    "@angular/compiler-cli": "5.2.11",
+    "@angular/core": "5.2.11",
+    "@angular/forms": "5.2.11",
+    "@angular/http": "5.2.11",
+    "@angular/platform-browser": "5.2.11",
+    "@angular/platform-browser-dynamic": "5.2.11",
+    "codelyzer": "^4.4.2",
+    "conventional-changelog-cli": "^2.0.1",
+    "ionic-angular": "3.9.2",
+    "ionicons": "3.0.0",
+    "rimraf": "^2.6.2",
+    "rxjs": "^5.5.11",
+    "tslint": "^5.11.0",
+    "typescript": "2.4.2",
+    "zone.js": "^0.8.26"
+  },
+  "homepage": "https://github.com/zyra/ionic2-super-tabs#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "ionic2-super-tabs",
+  "peerDependencies": {
+    "ionic-angular": "^3.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyra/ionic2-super-tabs.git"
+  },
+  "scripts": {
+    "build": "ngc",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "copy:scss": "cp src/components/super-tabs.scss dist/components/",
+    "lint": "tslint \"src/**/*.ts\"",
+    "postbuild": "npm run copy:scss",
+    "postchangelog": "git commit -am \"chore(): update changelog\"",
+    "prebuild": "rimraf dist aot",
+    "shipit": "npm run build && npm publish"
+  },
+  "typings": "dist/index.d.ts",
+  "version": "5.2.0"
+}
